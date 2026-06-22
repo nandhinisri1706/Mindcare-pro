@@ -1,0 +1,272 @@
+[
+    {
+        "id": "20260621212830",
+        "mood": "Neutral",
+        "note": "I need some advice \ud83d\udca1",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T21:28:30.144801",
+        "date": "2026-06-21",
+        "display_time": "09:28 PM"
+    },
+    {
+        "id": "20260621213710",
+        "mood": "Neutral",
+        "note": "i am tierd",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T21:37:10.114349",
+        "date": "2026-06-21",
+        "display_time": "09:37 PM"
+    },
+    {
+        "id": "20260621213717",
+        "mood": "Neutral",
+        "note": "What should I do?",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T21:37:17.023697",
+        "date": "2026-06-21",
+        "display_time": "09:37 PM"
+    },
+    {
+        "id": "20260621220313",
+        "mood": "Neutral",
+        "note": "I am feeling happy today",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:03:13.184845",
+        "date": "2026-06-21",
+        "display_time": "10:03 PM"
+    },
+    {
+        "id": "20260621220324",
+        "mood": "Happy",
+        "note": "I am feeling happy today",
+        "ai_response": "That's amazing! Hold onto this positive energy \u2728",
+        "timestamp": "2026-06-21T22:03:24.252681",
+        "date": "2026-06-21",
+        "display_time": "10:03 PM"
+    },
+    {
+        "id": "20260621220518",
+        "mood": "Stressed",
+        "note": "i feel stressed",
+        "ai_response": "Take a short break \ud83e\uddd8",
+        "timestamp": "2026-06-21T22:05:18.229732",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220525",
+        "mood": "Neutral",
+        "note": "Give me a quick fix",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:05:25.071794",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220532",
+        "mood": "Neutral",
+        "note": "I need some advice \ud83d\udca1",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:05:32.202770",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220538",
+        "mood": "Happy",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "That's amazing! Hold onto this positive energy \u2728",
+        "timestamp": "2026-06-21T22:05:38.391621",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220542",
+        "mood": "Sad",
+        "note": "I'm feeling sad today \ud83d\ude14",
+        "ai_response": "I understand\u2026 that sounds tough. You're stronger than you think \ud83d\udc99",
+        "timestamp": "2026-06-21T22:05:42.862006",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220551",
+        "mood": "Neutral",
+        "note": "Tell me it gets better",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:05:51.506623",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220556",
+        "mood": "Neutral",
+        "note": "Just talk to me \ud83d\udc9b",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:05:56.812338",
+        "date": "2026-06-21",
+        "display_time": "10:05 PM"
+    },
+    {
+        "id": "20260621220621",
+        "mood": "Neutral",
+        "note": "Make me smile \ud83d\ude02",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:06:21.124193",
+        "date": "2026-06-21",
+        "display_time": "10:06 PM"
+    },
+    {
+        "id": "20260621220631",
+        "mood": "Neutral",
+        "note": "Send a hug \ud83e\udd17",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:06:31.085426",
+        "date": "2026-06-21",
+        "display_time": "10:06 PM"
+    },
+    {
+        "id": "20260621220642",
+        "mood": "Neutral",
+        "note": "ok bye",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-21T22:06:42.826213",
+        "date": "2026-06-21",
+        "display_time": "10:06 PM"
+    },
+    {
+        "id": "20260622133952",
+        "mood": "Neutral",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T13:39:52.929421",
+        "date": "2026-06-22",
+        "display_time": "01:39 PM"
+    },
+    {
+        "id": "20260622134003",
+        "mood": "Neutral",
+        "note": "I just need someone to talk to \ud83d\udcac",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T13:40:03.394313",
+        "date": "2026-06-22",
+        "display_time": "01:40 PM"
+    },
+    {
+        "id": "20260622134540",
+        "mood": "Neutral",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T13:45:40.748064",
+        "date": "2026-06-22",
+        "display_time": "01:45 PM"
+    },
+    {
+        "id": "20260622134559",
+        "mood": "Neutral",
+        "note": "I feel the same",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T13:45:59.414957",
+        "date": "2026-06-22",
+        "display_time": "01:45 PM"
+    },
+    {
+        "id": "20260622134608",
+        "mood": "Neutral",
+        "note": "I'm feeling angry right now \ud83d\ude21",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T13:46:08.821074",
+        "date": "2026-06-22",
+        "display_time": "01:46 PM"
+    },
+    {
+        "id": "20260622135109",
+        "mood": "Neutral",
+        "note": "I'm feeling very stressed \ud83d\ude30",
+        "ai_response": "Take a short break \ud83e\uddd8",
+        "timestamp": "2026-06-22T13:51:09.475071",
+        "date": "2026-06-22",
+        "display_time": "01:51 PM"
+    },
+    {
+        "id": "20260622141941",
+        "mood": "Neutral",
+        "note": "I'm feeling sad today \ud83d\ude14",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T14:19:41.414712",
+        "date": "2026-06-22",
+        "display_time": "02:19 PM"
+    },
+    {
+        "id": "20260622142729",
+        "mood": "Neutral",
+        "note": "I need some advice \ud83d\udca1",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T14:27:29.094267",
+        "date": "2026-06-22",
+        "display_time": "02:27 PM"
+    },
+    {
+        "id": "20260622142736",
+        "mood": "Neutral",
+        "note": "I'm feeling very stressed \ud83d\ude30",
+        "ai_response": "Take a short break \ud83e\uddd8",
+        "timestamp": "2026-06-22T14:27:36.371327",
+        "date": "2026-06-22",
+        "display_time": "02:27 PM"
+    },
+    {
+        "id": "20260622142808",
+        "mood": "Neutral",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T14:28:08.837140",
+        "date": "2026-06-22",
+        "display_time": "02:28 PM"
+    },
+    {
+        "id": "20260622220414",
+        "mood": "Tired",
+        "note": "I'm feeling really tired \ud83d\ude34",
+        "ai_response": "Get some rest \ud83d\ude34",
+        "timestamp": "2026-06-22T22:04:14.694095",
+        "date": "2026-06-22",
+        "display_time": "10:04 PM"
+    },
+    {
+        "id": "20260622220422",
+        "mood": "Neutral",
+        "note": "Give me rest tips",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T22:04:22.251725",
+        "date": "2026-06-22",
+        "display_time": "10:04 PM"
+    },
+    {
+        "id": "20260622220936",
+        "mood": "Happy",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "That's amazing! Hold onto this positive energy \u2728",
+        "timestamp": "2026-06-22T22:09:36.915223",
+        "date": "2026-06-22",
+        "display_time": "10:09 PM"
+    },
+    {
+        "id": "20260622220950",
+        "mood": "Happy",
+        "note": "I'm feeling happy today! \ud83d\ude0a",
+        "ai_response": "That's amazing! Hold onto this positive energy \u2728",
+        "timestamp": "2026-06-22T22:09:50.380072",
+        "date": "2026-06-22",
+        "display_time": "10:09 PM"
+    },
+    {
+        "id": "20260622221018",
+        "mood": "Neutral",
+        "note": "I need some advice \ud83d\udca1",
+        "ai_response": "Sometimes neutral is okay too. Take your time \ud83e\udd0d",
+        "timestamp": "2026-06-22T22:10:18.902054",
+        "date": "2026-06-22",
+        "display_time": "10:10 PM"
+    }
+]
