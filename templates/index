@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Ultra+ | Your AI Wellness Companion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     AUTH OVERLAY — shown before login
+     ============================================================ -->
+<div id="auth-overlay" class="overlay-bg">
+    <div class="auth-card glass-card">
+        <div class="auth-logo">🧠</div>
+        <h2>Welcome to MindCare</h2>
+        <p>Your safe space to talk and reflect 💛</p>
+        <input type="text" id="username-input" class="text-input" placeholder="Enter your name to begin" autocomplete="off">
+        <button id="login-btn" class="btn-gradient full-width">Let's Go →</button>
+    </div>
+</div>
+
+<!-- ============================================================
+     HOME PAGE — visible after login
+     ============================================================ -->
+<div id="home-page" class="home-page" style="display:none;">
+
+    <!-- Background blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <!-- Navbar -->
+    <nav class="home-nav">
+        <div class="nav-brand">🧠 <span>MindCare Ultra+</span></div>
+        <div class="nav-right">
+            <div class="streak-pill">🔥 <span id="streak-count">1</span> day streak</div>
+            <button id="theme-btn" class="icon-btn" title="Toggle Theme">🌙</button>
+            <button id="open-dashboard-btn" class="icon-btn" title="Dashboard">📊</button>
+            <button id="open-sidebar-btn" class="icon-btn" title="Chat History">💬</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>How are you feeling today, <span id="hero-name">Friend</span>?</h1>
+        <p class="hero-sub">Choose your mood and let's talk about it</p>
+
+        <!-- MOOD SELECTOR — on home page only -->
+        <div class="mood-row" id="mood-row">
+            <button class="mood-pill" data-mood="Happy" data-msg="I'm feeling happy today! 😊">😊<span>Happy</span></button>
+            <button class="mood-pill" data-mood="Sad"   data-msg="I'm feeling sad today 😔">😔<span>Sad</span></button>
+            <button class="mood-pill" data-mood="Angry" data-msg="I'm feeling angry right now 😡">😡<span>Angry</span></button>
+            <button class="mood-pill" data-mood="Stressed" data-msg="I'm feeling very stressed 😰">😰<span>Stressed</span></button>
+            <button class="mood-pill" data-mood="Tired" data-msg="I'm feeling really tired 😴">😴<span>Tired</span></button>
+        </div>
+
+        <!-- Current Mood Display -->
+        <div id="current-mood-display" class="mood-display" style="display:none;">
+            Current Mood: <span id="current-mood-text">😊 Happy</span>
+        </div>
+    </section>
+
+    <!-- Quick Actions — on home page only -->
+    <section class="quick-section">
+        <h3>What do you need right now?</h3>
+        <div class="quick-grid">
+            <button class="quick-card" data-msg="Please help me relax 🧘">🧘<br><strong>Relax Me</strong><br><small>Calming exercises</small></button>
+            <button class="quick-card" data-msg="I just need someone to talk to 💬">💬<br><strong>Talk to Me</strong><br><small>I'm here to listen</small></button>
+            <button class="quick-card" data-msg="I need some advice 💡">💡<br><strong>Give Advice</strong><br><small>Practical tips</small></button>
+            <button class="quick-card" data-msg="Make me smile 😂">😂<br><strong>Make Me Smile</strong><br><small>Cheer me up</small></button>
+            <button class="quick-card" data-msg="Help me get to sleep 🌙">🌙<br><strong>Sleep Help</strong><br><small>Bedtime tips</small></button>
+        </div>
+    </section>
+
+    <!-- Connect with Someone Card -->
+    <section class="connect-section">
+        <div class="connect-card glass-card" id="connect-btn">
+            <span class="connect-icon">🤝</span>
+            <div>
+                <h4>Connect with Someone</h4>
+                <p>Feeling low? Talk to a friend or anonymous buddy 💛</p>
+            </div>
+            <span class="connect-arrow">→</span>
+        </div>
+    </section>
+
+    <!-- Floating Chat Button -->
+    <button class="chat-fab" id="chat-fab" title="Open Chat">
+        <span class="fab-icon">💬</span>
+        <span class="fab-badge" id="fab-badge" style="display:none">!</span>
+    </button>
+
+</div><!-- end #home-page -->
+
+
+<!-- ============================================================
+     CHAT SIDEBAR — slides in from left
+     ============================================================ -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+        <span class="sidebar-title">💬 Chat History</span>
+        <button class="icon-btn" id="close-sidebar-btn">✕</button>
+    </div>
+    <button class="new-chat-btn" id="new-chat-btn">➕ New Chat</button>
+    <div class="chat-list" id="chat-list">
+        <!-- populated by JS -->
+    </div>
+    <div class="sidebar-foot">
+        <button class="btn-gradient" id="sidebar-partner-btn" style="font-size:13px; padding:10px 20px;">🤝 Connect with Someone</button>
+    </div>
+</aside>
+
+
+<!-- ============================================================
+     CHAT POPUP — floating window
+     ============================================================ -->
+<div class="chat-popup glass-card" id="chat-popup" style="display:none;">
+    <!-- Header -->
+    <div class="chat-popup-head">
+        <div class="chat-popup-title">
+            <span class="online-dot"></span>
+            <div>
+                <div style="font-weight:700;">MindCare AI Ultra+</div>
+                <div id="popup-mood-label" style="font-size:11px; color:var(--text-light);">Ready to talk 💛</div>
+            </div>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center;">
+            <button class="icon-btn" id="popup-sidebar-btn" title="Chat History">📋</button>
+            <button class="icon-btn" id="close-chat-btn" title="Close">✕</button>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chat-messages">
+        <!-- populated by JS -->
+    </div>
+
+    <!-- Typing Indicator -->
+    <div class="typing-wrap" id="typing-wrap" style="display:none;">
+        <div class="typing-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <!-- Smart Suggestions -->
+    <div class="suggestions-row" id="suggestions-row"></div>
+
+    <!-- Input -->
+    <div class="chat-input-bar">
+        <div class="input-pill">
+            <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off">
+            <button class="mic-btn" id="mic-btn" title="Voice Input">🎙️</button>
+        </div>
+        <button class="send-btn" id="send-btn" title="Send">
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+    </div>
+    <div class="chat-hint" id="chat-hint">You can talk about anything… I'm here 💛</div>
+</div>
+
+
+<!-- ============================================================
+     DASHBOARD MODAL
+     ============================================================ -->
+<div class="overlay-bg" id="dashboard-overlay" style="display:none;">
+    <div class="dashboard-modal glass-card">
+        <div class="modal-head">
+            <h3>📊 Your Wellness Dashboard</h3>
+            <button class="icon-btn" id="close-dashboard-btn">✕</button>
+        </div>
+        <div class="insight-box">
+            <h4>This Week's Insight</h4>
+            <p id="weekly-insight-text">Loading…</p>
+        </div>
+        <div style="margin-top:15px;">
+            <h4 style="margin-bottom:10px; font-size:14px;">Mood Distribution</h4>
+            <canvas id="mood-chart" height="180"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================
+     PARTNER MODAL
+     ============================================================ -->
+<div class="overlay-bg" id="partner-overlay" style="display:none;">
+    <div class="partner-modal glass-card" style="text-align:center; max-width:380px;">
+        <button class="icon-btn" id="close-partner-btn" style="float:right;">✕</button>
+        <div style="font-size:48px; margin-bottom:12px;">🤝</div>
+        <h3>Connect with Someone</h3>
+        <p style="color:var(--text-light); margin:12px 0 20px; font-size:14px;">Share an invite link with a friend or get matched with an anonymous support buddy.</p>
+        <button class="btn-gradient full-width" style="margin-bottom:10px;" onclick="navigator.clipboard.writeText('https://mindcare.app/join?ref=friend').then(() => alert('Link copied! Share with a friend 💛'))">🔗 Copy Invite Link</button>
+        <button class="btn-outline full-width" onclick="alert('Finding anonymous buddy… 🤝')">🫂 Find Anonymous Buddy</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
