@@ -62,7 +62,6 @@ Nandhini
 ---
 
 💬 “Sometimes, all you need is someone who listens.” 💛
-https://loud-chairs-create.loca.lt/
 <img width="747" height="510" alt="image" src="https://github.com/user-attachments/assets/8c0456fc-4a6d-4eb9-9968-8dbe8a00c5a7" />
 <img width="1333" height="611" alt="image" src="https://github.com/user-attachments/assets/667971bd-abaa-420d-ba5b-712eb505097d" />
 <img width="1339" height="616" alt="image" src="https://github.com/user-attachments/assets/b403c732-333c-4199-b32b-b5cae3d2bed8" />
